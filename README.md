@@ -36,7 +36,6 @@ The application is based on the **Model-View-Controller (MVC)** architecture:
 - **View**: Renders user interfaces using React components.
 - **Controller**: Handles logic and communicates between the Model and View.
 
-![System Architecture](link_to_architecture_diagram)
 
 ## Installation
 
