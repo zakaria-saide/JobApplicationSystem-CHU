@@ -1,0 +1,300 @@
+body {
+  width: 100%;
+  height: 100vh; 
+  font-family: 'Poppins', sans-serif;
+  position: relative;  
+  overflow-x : hidden ;
+  box-sizing: border-box;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+
+#formDiv{
+background-color: (255, 255, 255, 3); /* White background with 50% opacity */
+}
+
+#lgForm input{
+  border-bottom: 1.2px solid;
+}
+
+.box-shadowcust{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+#LgForm {
+  border: solid 1px #e6ded9;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  opacity: 0;
+  transform: scale(0.95); /* Start slightly scaled down */
+  animation: Scalef 900ms ease-in-out forwards; /* Use forwards to retain the end state of the animation */
+}
+
+@keyframes Scalef {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#felicitations{
+  border: solid 1px #e6ded9;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  opacity: 0;
+  transform: scale(0.95); /* Start slightly scaled down */
+  animation: Scalef 700ms ease-in-out forwards; /* Use forwards to retain the end state of the animation */
+}
+#Etapes{
+  opacity: 0;
+  transform: scale(0.95); /* Start slightly scaled down */
+  animation: Scalef 700ms ease-in-out forwards; /* Use forwards to retain the end state of the animation */
+}
+
+.RHumain{
+   opacity: 0;
+  transform: scale(0.95); /* Start slightly scaled down */
+  animation: Scalef 700ms ease-in-out forwards; /* Use forwards to retain the end state of the animation */
+}
+
+.blob {
+  position: fixed;
+  top: 0;
+  left: 0;
+  fill: #12648e;
+  width: 45vmax;
+  z-index: -1;
+  animation: move 30s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes move {
+  0%   { transform: scale(1) translate(0px, 0px); }
+  38%  { transform: scale(0.8) translate(80vw, 20vh) rotate(160deg); }
+  40%  { transform: scale(0.8) translate(80vw, 20vh) rotate(160deg); }
+  78%  { transform: scale(1.1) translate(0vw, 50vh) rotate(-20deg); }
+  80%  { transform: scale(1.1) translate(0vw, 50vh) rotate(-20deg); }
+  100% { transform: scale(1) translate(0px, 0px); }
+}
+
+.radio-inputs {
+  position: relative;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color:  #d1d5db ; /* Tailwind bg-gray-200 */
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 288px; /* Tailwind w-72 */
+  font-size: 14px; /* Tailwind text-sm */
+}
+
+.radio {
+  flex: 1 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.radio input {
+  display: none; /* Tailwind sr-only */
+}
+
+.radio .name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.35rem 0;
+  transition: all 0.15s ease-in-out;
+}
+
+.radio input:checked + .name {
+  background-color: #fff; /* Tailwind bg-white */
+  font-weight: 500;
+}
+
+.buttonD {
+  --font-color: #9ca3af;
+  --bg-color-sub: #9ca3af;
+  --bg-color: #eee;
+  --main-color: #9ca3af;
+  position: relative;
+  max-width: 431px;
+  /* min-width: 350px; */
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--main-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.buttonD, .buttonD__icon, .buttonD__text {
+  transition: all 0.3s;
+}
+
+.buttonD .buttonD__text {
+  transform: translateX(10px);
+  color: var(--font-color);
+}
+
+.buttonD .buttonD__icon {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 39px;
+  background-color: var(--bg-color-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonD:hover {
+  background: var(--bg-color);
+}
+
+.buttonD:hover .buttonD__text {
+  color: transparent;
+}
+
+.buttonD:hover .buttonD__icon {
+  width: 100%;
+  transform: translateX(0);
+}
+
+.buttonD:active {
+  scale: 1.05;
+}
+
+/* The switch - the box around the slider */
+.switchblue {
+  font-size: 11px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switchblue input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.sliderblue {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(182, 182, 182);
+  transition: .4s;
+  border-radius: 10px;
+}
+
+.sliderblue:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 8px;
+  left: 0.3em;
+  bottom: 0.3em;
+  transform: rotate(270deg);
+  background-color: rgb(255, 255, 255);
+  transition: .4s;
+}
+
+.switchblue input:checked + .sliderblue {
+  background-color: #12648e;
+}
+
+.switchblue input:focus + .slider {
+  box-shadow: 0 0 1px #12648e;
+}
+
+.switchblue input:checked + .sliderblue:before {
+  transform: translateX(1.5em);
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+
+.custTransi{
+  opacity: 1;
+  animation: slideInFromTop 0.5s ease-out forwards;  
+}
+
+.Textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid #12648e;
+}
+
+/* CandidatureInfo.css */
+.content-enter {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 600ms ease-out, opacity 300ms ease-out;
+}
+.content-enter-active {
+  max-height: 1000px; /* large enough value to cover the content */
+  opacity: 1;
+}
+.content-exit {
+  max-height: 1000px;
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 300ms ease-in, opacity 300ms ease-in;
+}
+.content-exit-active {
+  max-height: 0;
+  opacity: 0;
+}
+
+.loader {
+  width: 45px;
+  height: 40px;
+  background: linear-gradient(#0000 calc(1*100%/6),#12648e 0 calc(3*100%/6),#0000 0),
+            linear-gradient(#0000 calc(2*100%/6),#12648e 0 calc(4*100%/6),#0000 0),
+            linear-gradient(#0000 calc(3*100%/6),#12648e 0 calc(5*100%/6),#0000 0);
+  background-size: 10px 400%;
+  background-repeat: no-repeat;
+  animation: matrix 1s infinite linear;
+}
+
+@keyframes matrix {
+  0% {
+    background-position: 0% 100%, 50% 100%, 100% 100%
+  }
+
+  100% {
+    background-position: 0% 0%, 50% 0%, 100% 0%
+  }
+}
+    
