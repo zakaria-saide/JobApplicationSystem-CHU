@@ -2,6 +2,8 @@
 
 This project involves the development of a web application for managing job applications for recruitment contests at the **Hassan II University Hospital Center (CHU)** in Fes. The application streamlines the application and recruitment process for both administrators and applicants by automating workflows and providing a user-friendly interface.
 
+**Check out the demonstration video:** https://www.linkedin.com/posts/zakaria-saide_webdevelopment-internshipproject-chuhassanii-activity-7282340220878909440-cq8Q?utm_source=share&utm_medium=member_desktop
+
 ## Features
 
 - **Candidate Features**:
