@@ -21,7 +21,7 @@ This project involves the development of a web application for managing job appl
 
 ## Technologies Used
 
-- **Frontend**: React.js with Vite and Tailwind CSS.
+- **Frontend**: React JSX with Vite and Tailwind CSS.
 - **Backend**: ASP.NET Core 8 MVC.
 - **Database**: Oracle SQL Developer.
 - **Development Tools**:
