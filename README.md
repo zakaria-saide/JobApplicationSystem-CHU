@@ -50,16 +50,15 @@ The application is based on the **Model-View-Controller (MVC)** architecture:
 1. Clone the repository:
    ```bash
    git clone https://github.com/zakaria-saide/JobApplicationSystem-CHU.git
-   cd your-repo-name
    ```
 2. Install frontend dependencies:
    ```bash
-   cd client
+   cd frontend
    npm install
    ```
 3. Install backend dependencies:
    ```bash
-   cd server
+   cd backend
    dotnet restore
    ```
 4. Set up the database with the provided schema.
