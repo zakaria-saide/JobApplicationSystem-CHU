@@ -49,7 +49,7 @@ The application is based on the **Model-View-Controller (MVC)** architecture:
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo-name.git
+   git clone https://github.com/zakaria-saide/JobApplicationSystem-CHU.git
    cd your-repo-name
    ```
 2. Install frontend dependencies:
